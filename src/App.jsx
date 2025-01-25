@@ -1,12 +1,18 @@
 import React from "react";
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import Navbar from "./components/navbar/Navbar";
+import Register from "./components/auth/Register";
+import Hero from "./components/Home/Hero";
 const App = () => {
   return (
-    <div className="container">
+    <Router>
       <Navbar />
-    </div>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/register1" element={<Register />} />
+      </Routes>
+    </Router>
   );
 };
 

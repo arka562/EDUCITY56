@@ -1,0 +1,28 @@
+.home {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      rgba(23, 200, 215, 1),
+      rgba(200, 161, 105, 1)
+    ),
+    url('./assets/background.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: repeat; 
+  height: 80vh; 
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header{
+  font-weight: 700;
+  font-style: italic;
+}
+.para{
+  margin:10px;
+  padding:10px;
+  font-size: 20px;
+  font-weight: 600;
+}

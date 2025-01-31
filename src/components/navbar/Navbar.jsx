@@ -1,19 +1,26 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/asset";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleMenu = () => {
     setMenu(!menu);
   };
 
   const handleRegister = () => {
-    navigate("/register1"); // Navigate to the Registration page
+    navigate("/register1");
+  };
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  const handleProfile = () => {
+    navigate("/profile");
   };
 
   return (
@@ -40,7 +47,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="auth">
-            <button className="login">Login</button>
+            <button className="login" onClick={handleLogin}>
+              Login
+            </button>
             <button className="register" onClick={handleRegister}>
               Register
             </button>
@@ -68,12 +77,12 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/profile" onClick={handleMenu}>
+                  <Link to="/profile" onClick={handleProfile}>
                     Profile
                   </Link>
                 </li>
                 <li>
-                  <button className="login" onClick={handleMenu}>
+                  <button className="login" onClick={handleLogin}>
                     Login
                   </button>
                 </li>

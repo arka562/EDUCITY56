@@ -43,7 +43,9 @@ const Navbar = () => {
               <Link to="/quizzes">Quizzes</Link>
             </li>
             <li>
-              <Link to="/profile">Profile</Link>
+              <Link to="/profile" onClick={handleProfile}>
+                Profile
+              </Link>
             </li>
           </ul>
           <div className="auth">

@@ -6,6 +6,11 @@ import Register from "./components/auth/Register";
 import Hero from "./components/Home/Hero";
 import Login from "./components/auth/Login";
 import Footer from "./components/footer/Footer";
+import Dashboard from "./components/profile/Dashboard";
+import ProgressTracker from "./components/profile/ProgressTracker";
+import AboutUs from "./components/AboutUs";
+import Messages from "./components/Messages";
+
 const App = () => {
   return (
     <Router>
@@ -14,6 +19,10 @@ const App = () => {
         <Route path="/" element={<Hero />} />
         <Route path="/register1" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Dashboard />} />
+        <Route path="/progress" element={<ProgressTracker />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/messages" element={<Messages />} />
       </Routes>
       <Footer />
     </Router>

@@ -17,7 +17,7 @@ const Dashboard = () => {
       <div className="courses">
         <ul>
           <li>
-            <Link to="/ mycourses">My Courses</Link>
+            <Link to="/mycourses">My Courses</Link>
           </li>
           <hr style={{ border: "2px solid brown" }} />
           <li>

@@ -1,6 +1,5 @@
 .dashboard-heading{
   display:flex;
-  flex-direction: column;
 }
 .dashboard-heading img{
   width:100px;

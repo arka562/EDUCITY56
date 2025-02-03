@@ -10,6 +10,8 @@ import Dashboard from "./components/profile/Dashboard";
 import ProgressTracker from "./components/profile/ProgressTracker";
 import AboutUs from "./components/AboutUs";
 import Messages from "./components/Messages";
+import MyCourses from "./components/MyCourses";
+import MyDailyUpdates from "./components/MyDailyUpdates";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/progress" element={<ProgressTracker />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/messages" element={<Messages />} />
+        <Route path="/mycourses" element={<MyCourses />} />
+        <Route path="/mydailyupdates" element={<MyDailyUpdates />} />
       </Routes>
       <Footer />
     </Router>
